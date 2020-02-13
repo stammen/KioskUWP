@@ -4,7 +4,7 @@ An example on how to run multiple UWP and Desktop Bridge Apps in Kiosk Mode.
 
 The repo describes how to do the following:
 
-1. Install a UWP app as the default fullscreen app using [Shell Launcher V2] (https://docs.microsoft.com/en-us/windows/configuration/kiosk-shelllauncher)
+1. Install a UWP app as the default fullscreen app using [Shell Launcher V2](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shelllauncher)
 
 1. Launch a second packaged (Desktop Bridge) WPF app from the UWP app using a protocol.
 
@@ -17,17 +17,21 @@ The following applications are required to be installed:
 
 * Visual Studio 2017 or 2019 with Windows Universal App Development package installed
 
+* [SysInternals Suite](https://download.sysinternals.com/files/SysinternalsSuite.zip)
+
+
 The KioskUWP.sln contains the following projects:
 
 * KioskUWP - the main UWP app
 
 * [TreeViewFileExplorer](https://github.com/mikependon/Tutorials/tree/master/WPF/TreeViewFileExplorer) - a WPF App that allows browsing of the files and drives on the computer.
 
-* PackagingProject - A project to package the TreeViewFileExplorer app as a Desktop Bridge app
+* PackagingProject - A project to package the TreeViewFileExplorer app as a Desktop Bridge app.
+
+Note: Both the PackagingProject (containing the TreeViewFileExplorer app) and the KioskUWP app will need to be deployed for All Users (see below) in order to be able to run in Kiosk mode.
 
 
 # Build and Run
-
 
 1. Open the KioskUWP.sln with Visual Studio 2017 or 2019
 
@@ -67,7 +71,7 @@ The KioskUWP.sln contains the following projects:
 
 1. Exit both applications.
 
-1. Uninstall both application.
+1. **Important** Uninstall both applications. We will need to install these applications for All Users (see below).
 
 
 # Setup Kiosk Mode
@@ -75,6 +79,7 @@ The KioskUWP.sln contains the following projects:
 Note: These instructions are adapted from this [repo](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2/SampleBridgeWmiScripts)
 
 [ShellLauncherBridgeWmiHelpers.ps1](./SampleBridgeWmiScripts/ShellLauncherBridgeWmiHelpers.ps1) provides below functions
+
 1. Set-ShellLauncherBridgeWmi, it takes a parameter FilePath to a raw config xml (not the escaped one) and configure Shell Launcher through bridge WMI 
 
 2. Clear-ShellLauncherBridgeWmi, it clears shell launcher configuration using bridge WMI
