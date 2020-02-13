@@ -179,9 +179,9 @@ PS C:\Users\test> Get-ShellLauncherBridgeWmi
 
 * The KioskUWP app should appear fullscreen.
 
-1. Click on the Launch WPF App button. The WPF app should appear on top of the UWP app.
+* Click on the Launch WPF App button. The WPF app should appear on top of the UWP app.
 
-1. Close the WPF app. The UWP app should now appear.
+* Close the WPF app. The UWP app should now appear.
 
 
 ##  Contributing
