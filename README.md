@@ -122,13 +122,11 @@ file in the project and navigating to the Packaging Tab. The PFN will be at the 
 
 We will now setup a simple Windows 10 Kiosk account that will run our 2 packaged apps. You will need to add the PFN of your KioskUWP app to the ShellLauncherAutoLogonUwp.xml file at the root of this repo.
 
-* Replace the PFN in the following line (Near line 11)
+* Replace the PFN in the following line (Near line 11) with the PFN of your KioskUWP app. Make sure you append !App at the end of your PFN
 
 ```xml      
 <Shell Shell="1978ec3e-63e8-4caf-bd96-5f4d5a87f93c_e8xk87pxx0yyw!App" v2:AppType="UWP" v2:AllAppsFullScreen="true">
 ```
-
-With the PFN of your KioskUWP app. Make sure you append !App at the end of your PFN
 
 * You can now set up the Kiosk using the following instructions:
 
