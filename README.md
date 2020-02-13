@@ -78,7 +78,7 @@ PS C:\Users\test> . .\ShellLauncherBridgeWmiHelpers.ps1
 4. After importing, run the command Set-ShellLauncherBridgeWMI with FilePath pointing to a shell launcher config xml
 
 ```
-PS C:\Users\test> Set-ShellLauncherBridgeWmi -FilePath .\ShellLauncher.xml
+PS C:\Users\test> Set-ShellLauncherBridgeWmi -FilePath .\ShellLauncherAutoLogonUwp.xml
 ```
 
 5. To clean up ShellLauncher using bridge WMI, run the other command Clear-ShellLauncherBridgeWMI
