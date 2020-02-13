@@ -1,4 +1,4 @@
-#KioskUWP
+# KioskUWP
 
 An example on how to run multiple UWP and Desktop Bridge Apps in Kiosk Mode
 
