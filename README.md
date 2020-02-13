@@ -1,12 +1,30 @@
 # KioskUWP
 
-An example on how to run multiple UWP and Desktop Bridge Apps in Kiosk Mode
+An example on how to run multiple UWP and Desktop Bridge Apps in Kiosk Mode.
+
+The repo describes how to do the following:
+
+1. Install a UWP app as the default fullscreen app using [Shell Launcher V2] (https://docs.microsoft.com/en-us/windows/configuration/kiosk-shelllauncher)
+
+1. Launch a second packaged (Desktop Bridge) WPF app from the UWP app using a protocol.
+
+1. Return to the UWP app when the WPF app is closed.
+
 
 # Getting Started
 
 The following applications are required to be installed:
 
 * Visual Studio 2017 or 2019 with Windows Universal App Development package installed
+
+The KioskUWP.sln contains the following projects:
+
+* KioskUWP - the main UWP app
+
+* [TreeViewFileExplorer](https://github.com/mikependon/Tutorials/tree/master/WPF/TreeViewFileExplorer) - a WPF App that allows browsing of the files and drives on the computer.
+
+* PackagingProject - A project to package the TreeViewFileExplorer app as a Desktop Bridge app
+
 
 # Build and Run
 
