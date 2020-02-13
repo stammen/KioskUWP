@@ -56,7 +56,7 @@ The following applications are required to be installed:
 
 Note: These instructions are adapted from this [repo](https://github.com/microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2/SampleBridgeWmiScripts)
 
-[ShellLauncherBridgeWmiHelpers.ps1](./ShellLauncherBridgeWmiHelpers.ps1) provides below functions
+[ShellLauncherBridgeWmiHelpers.ps1](./SampleBridgeWmiScripts/ShellLauncherBridgeWmiHelpers.ps1) provides below functions
 1. Set-ShellLauncherBridgeWmi, it takes a parameter FilePath to a raw config xml (not the escaped one) and configure Shell Launcher through bridge WMI 
 
 2. Clear-ShellLauncherBridgeWmi, it clears shell launcher configuration using bridge WMI
